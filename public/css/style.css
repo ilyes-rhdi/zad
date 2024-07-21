@@ -1,0 +1,33 @@
+.board {
+    border-collapse: collapse;
+    background-color: #f4f4f4;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    border: 2px solid #333;
+    font-size: 4rem;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.cell:active {
+    background-color: #d0d0d0;
+}
+
+.win-cell {
+    background-color: #b0ffb0 !important;
+    color: #000;
+    font-weight: bold;
+}
